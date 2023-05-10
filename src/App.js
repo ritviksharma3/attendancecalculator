@@ -8,13 +8,10 @@ import classes from "./App.module.css";
 function App() {
   return (
     <>
+      <Header />
       <div className={classes.app}>
-        <h1 className={classes.h1}>Attendance Calculator</h1>
-        <div>
-          <Header />
-          <IdealCalc />
-          <InputCalc />
-        </div>
+        <IdealCalc />
+        <InputCalc />
       </div>
     </>
   );
