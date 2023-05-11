@@ -3,6 +3,7 @@ form {
   flex-direction: column;
   gap: 20px;
 }
+
 .inp {
   height: 35% !important;
 }

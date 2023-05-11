@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: whitesmoke;
+  padding: 5px 10px;
+  height: 2%;
+}
+
+.title {
+  padding: 5px 10px;
+  font-size: 25px;
+  background: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    rgb(15, 15, 255),
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+.header > ul {
+  display: inline-flex;
+  position: relative;
+  color: #0087ca;
+}
+.header > ul > li {
+  list-style: none;
+  color: black;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.item-list a,
+.item-list a:link,
+.item-list a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.item-list a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, white, blue);
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease-out;
+}
+
+.item-list a:hover::before {
+  background-size: 100% 2px;
+}
+
+.item-list > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
